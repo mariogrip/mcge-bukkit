@@ -1,0 +1,27 @@
+name: MCGE
+main: com.mariogrip.mcge.mcge
+version: 0.1
+description: MineCraft Global money system.
+author: mariogrip
+website: http://mariogrip.com/mcge
+commands:
+   money:
+      aliases: [eco, bal, balance]
+      description: Main MCGE command.
+      usage: /money help
+permissions:
+    mcge.balance:
+        default: true
+        description: Check balance
+    mcge.*:
+        description: Gives access to all MCGE commands
+        default: op
+    mcge.reload:
+        description: Reloads MCGE
+        default: op
+    mcge.balance.others:
+        description: Check balance on others players
+        default: op
+    mcge.send:
+        default: true
+        description: Sends coins.
